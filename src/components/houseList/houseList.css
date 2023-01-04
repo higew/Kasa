@@ -1,0 +1,15 @@
+#houses-list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1240px;
+    padding: 20px;
+    justify-content: center;
+    background-color: #f6f6f6;
+    border-radius: 25px;
+    margin: 0px auto 43px auto;
+}
+
+#houses-list .card {
+    padding: 30px;
+    background-color: #f6f6f6;
+}

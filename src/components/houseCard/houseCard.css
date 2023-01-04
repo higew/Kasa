@@ -1,0 +1,27 @@
+.card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    transition-duration: 0.5s;
+}
+
+.card a .cover-location {
+    width: 340px;
+    border-radius: 10px;
+    object-fit: cover;
+    height: 340px;
+}
+
+.card a .name-location {
+    padding: 0;
+    margin: 0 20px 20px 20px;
+    position: absolute;
+    bottom: 40px;
+    font-size: 18px;
+    color: white;
+    max-width: 340px;
+}
+
+.card:hover {
+    transform: scale(105%);
+}
