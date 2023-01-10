@@ -1,0 +1,42 @@
+.collapse-section {
+    display: flex;
+    flex-direction: column;
+}
+.collapse-section .collapse {
+    background-color: #ff6060;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    transition: background-color 0.8s ease;
+}
+.collapse-section .collapse:hover,
+.collapse-section active {
+    background-color: #ff7878;
+}
+.collapse-section .collapse-title {
+    text-align: left;
+    font-size: 24px;
+    margin: 0;
+}
+.collapse-section .collapse-icon {
+    margin-left: auto;
+    transition: transform 0.8s ease;
+    margin-right: 16px;
+}
+.collapse-section .rotation {
+    transform: rotate(180deg);
+}
+.collapse-section .collapse-content {
+    background-color: #f7f7f7;
+    overflow: hidden;
+    transition: max-height 0.6s ease;
+    border-radius: 0px 0px 5px 5px;
+}
+.collapse-section .collapse-text {
+    color: #ff6060;
+}
