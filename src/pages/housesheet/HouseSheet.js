@@ -1,6 +1,7 @@
 import React from 'react'
 import Collapse from '../../components/collapse/Collapse';
 import Stars from '../../components/stars/Stars'
+import Tags from '../../components/tags/Tags'
 import { useNavigate, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "./houseSheet.css";
@@ -42,9 +43,7 @@ const Housing = () => {
                 <div id={"container-logement-infos"}>
                     <h2 id={"active-name-location"}>{appartment.title}</h2>
                     <p id={"active-place-location"}>{appartment.location}</p>
-                    <div className={"tags"}>
-                        
-                    </div>
+                    <Tags tags={appartment.tags} />
                 </div>
                 <div id={"container-owner-stars"}>
                     <div id={"container-owner"}>
