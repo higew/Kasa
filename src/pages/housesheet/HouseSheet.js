@@ -1,7 +1,8 @@
 import React from 'react'
-import Collapse from '../../components/collapse/Collapse';
+import Collapse from '../../components/collapse/Collapse'
 import Stars from '../../components/stars/Stars'
 import Tags from '../../components/tags/Tags'
+import Gallery from '../../components/gallery/Gallery'
 import { useNavigate, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "./houseSheet.css";
@@ -37,7 +38,7 @@ const Housing = () => {
     return appartment ? (
         <section id={"appartment-description"}>
             <div id={"container-gallery"}>
-                
+                <Gallery pictures={appartment.pictures} title={appartment.title} />
             </div>
             <div id={"container-primary-infos"}>
                 <div id={"container-logement-infos"}>
