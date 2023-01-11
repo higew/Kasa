@@ -1,5 +1,6 @@
 import React from 'react'
 import Collapse from '../../components/collapse/Collapse';
+import Stars from '../../components/stars/Stars'
 import { useNavigate, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "./houseSheet.css";
@@ -53,7 +54,7 @@ const Housing = () => {
                         </div>
                     </div>
                     <div id={"evaluation"}>
-                        
+                        <Stars rating={appartment.rating}></Stars>
                     </div>
                 </div>
             </div>
@@ -66,7 +67,7 @@ const Housing = () => {
                 <Collapse title={"Équipements"}>
                 <ul className={"list-equipments"}>
                     {appartment.equipments.map((equipment, index) => (
-                    <li key={index}>{equipment}</li>
+                        <li key={index}>{equipment}</li>
                     ))}
                 </ul>
                 </Collapse>

@@ -20,6 +20,16 @@
     margin: 0;
 }
 
+#appartment-description #container-primary-infos #container-owner-stars #evaluation {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 0px 15px 0px;
+}
+
+#appartment-description #container-primary-infos #container-owner-stars #evaluation .star {
+    padding: 4px;
+}
+
 #appartment-description #container-primary-infos #container-logement-infos #active-name-location,
 #appartment-description #container-primary-infos #container-logement-infos #active-place-location {
     color: #ff6060;
