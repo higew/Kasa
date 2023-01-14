@@ -52,8 +52,8 @@ header nav #menu li a .active {
     header nav #menu #menu-home {
         margin-right: 10px;
     }
-    header nav #menu #menu-home li a{
-        font-size: 12px;
+    header nav #menu li a{
+        font-size: 17px;
     }       
 }
 

@@ -13,3 +13,28 @@
     padding: 30px;
     background-color: #f6f6f6;
 }
+
+@media (max-width: 1250px) {
+    #houses-list {
+        margin-left: 50px;
+        margin-right: 50px;
+        max-width: none;
+    }
+    #houses-list .card {
+        padding: 10px;
+    }
+}
+@media (max-width: 600px) {
+    #houses-list {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+@media (max-width: 425px) {
+    #houses-list {
+        background-color: white;
+    }
+    #houses-list .card {
+        background-color: white;
+    }
+}

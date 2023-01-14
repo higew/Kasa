@@ -11,7 +11,7 @@ function Gallery(props) {
     const prevImgIndex = activeIndex ? activeIndex - 1 : pictures.length - 1;
     const nextImgIndex = activeIndex === pictures.length - 1 ? 0 : activeIndex + 1;
     
-    if(pictures.length != 1) {
+    if(pictures.length !== 1) {
         return (
             <section className="gallery">
                 <div className="container">

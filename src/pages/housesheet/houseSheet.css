@@ -82,3 +82,92 @@
 #appartment-description #collapses .collapse-section .collapse-content .collapse-text .description-logement-collapse {
     font-size: 18px;
 }
+
+@media (max-width: 1440px) {
+    #appartment-description #container-primary-infos {
+        justify-content: normal;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    #appartment-description #container-primary-infos #container-logement-infos #active-name-location {
+        font-size: 30px;
+    }
+    #appartment-description #container-primary-infos #container-owner-stars {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    #appartment-description #container-primary-infos {
+        flex-direction: column;
+    }
+    #appartment-description #container-primary-infos #container-logement-infos .tags {
+        margin-bottom: 16px;
+    }
+    #appartment-description #container-primary-infos #container-owner-stars {
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+    #appartment-description #container-primary-infos #container-owner-stars #container-owner {
+        order: 1;
+        margin-left: auto;
+    }
+    #appartment-description #container-primary-infos #container-owner-stars #container-owner .owner {
+        margin-top: 0;
+    }
+    #appartment-description #container-primary-infos #container-owner-stars #evaluation {
+        justify-content: normal;
+    }
+    #appartment-description #collapses {
+        flex-direction: column;
+        align-items: center;
+    }
+    #appartment-description #collapses #collapse-description {
+        margin-bottom: 20px;
+    }
+    #appartment-description #collapses .collapse-section {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 600px) {
+    #appartment-description #container-primary-infos {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #appartment-description #container-primary-infos #container-logement-infos #active-name-location {
+        font-size: 18px;
+    }
+    #appartment-description #container-primary-infos #container-logement-infos #active-place-location {
+        font-size: 14px;
+    }
+    #appartment-description #container-primary-infos #container-logement-infos .tags .tag {
+        padding: 0 25px 0 25px;
+    }
+    #appartment-description #container-primary-infos #container-logement-infos .tags .tag p {
+        font-size: 10px;
+    }
+    #appartment-description #container-primary-infos #container-owner-stars #container-owner .owner #owner-name {
+        font-size: 12px;
+    }
+    #appartment-description #container-primary-infos #container-owner-stars #container-owner .owner img {
+        width: 32px;
+    }
+    #appartment-description #container-primary-infos #container-owner-stars #evaluation .star {
+        height: 20px;
+        width: 20px;
+    }
+    #appartment-description #collapses .collapse-section .collapse-title {
+        font-size: 13px;
+    }
+    #appartment-description #collapses .collapse-section .collapse-content .collapse-text .description-logement-collapse,
+    #appartment-description #collapses .collapse-section .collapse-content .collapse-text .list-equipments li {
+        font-size: 12px;
+    }
+    #appartment-description #collapses .collapse-section .collapse-content .collapse-text .description-logement-collapse,
+    #appartment-description #collapses .collapse-section .collapse-content .collapse-text .list-equipments {
+        padding: 23px 11px 23px 11px;
+    }
+}

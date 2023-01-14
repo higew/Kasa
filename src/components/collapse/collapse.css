@@ -24,13 +24,17 @@
     padding-left: 10px;
     margin: 0;
 }
+.collapse-section .arrow {
+    transform: rotate(180deg);
+    height: 10px;
+}
 .collapse-section .collapse-icon {
     margin-left: auto;
     transition: transform 0.8s ease;
     margin-right: 16px;
 }
 .collapse-section .rotation {
-    transform: rotate(180deg);
+    transform: rotate(360deg);
 }
 .collapse-section .collapse-content {
     background-color: #f7f7f7;
@@ -40,4 +44,21 @@
 }
 .collapse-section .collapse-text {
     color: #ff6060;
+}
+
+@media (max-width: 768px) {
+    .collapse-section .collapse {
+        padding: 10px;
+    }
+    .collapse-section .collapse-title {
+        font-size: 16px;
+    }
+}
+@media (max-width: 425px) {
+    .collapse-section .collapse {
+        padding: 8px;
+    }
+    .collapse-section .collapse-title {
+        font-size: 13px;
+    }
 }

@@ -14,3 +14,19 @@
     margin: 0;
     padding: 36px 18px 36px 18px;
 }
+
+@media (max-width: 768px) {
+    #collapses-group {
+      width: 85%;
+      margin: auto;
+    }
+    #collapses-group .collapse-section .collapse-content .collapse-text p {
+      font-size: 15px;
+    }
+  }
+  @media (max-width: 425px) {
+    #collapses-group .collapse-section .collapse-content .collapse-text p {
+      font-size: 12px;
+      padding: 23px 11px 23px 11px;
+    }
+  }

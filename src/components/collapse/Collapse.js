@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState, useRef } from "react";
+import arrow from "../../assets/images/arrows/arrow.png";
 import './collapse.css'
 
 const Collapse = (props) => {
@@ -22,7 +23,7 @@ const Collapse = (props) => {
         <div className={"collapse-section"} id={props.id}>
             <button className={`collapse ${setActive}`} onClick={toggleCollapse}>
                 <p className={"collapse-title"}>{props.title}</p>
-                <p className={`${setRotate}`}>⌄</p>
+                <img className={`arrow ${setRotate}`} src={arrow} alt="Flèche pour ouvrir l'accordéon"></img>
             </button>
             <div ref={content} style={{ maxHeight: `${setHeight}` }} className={"collapse-content"}>
                 <div className={"collapse-text"}>{props.children}</div>

@@ -41,3 +41,31 @@
     font-size: 18px;
     color: white;
 }
+
+@media (max-width: 980px) {
+    .gallery .container {
+        position: relative;
+        width: 90%;
+        max-height: 255px;
+    }
+
+    .gallery .container .leftArrow {
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translate(50%, -50%);
+        cursor: pointer;
+        width: 20px;
+        height: auto;
+    }
+
+    .gallery .container .rightArrow {
+        position: absolute;
+        top: 50%;
+        right: 0%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        width: 20px;
+        height: auto;
+    }
+}
