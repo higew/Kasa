@@ -11,13 +11,9 @@ const Collapse = (props) => {
 
     function toggleCollapse() {
         setActiveState(setActive === "" ? "active" : "");
-        setHeightState(
-        setActive === "active" ? "0px" : `${content.current.scrollHeight}px`
-        );
+        setHeightState(setActive === "active" ? "0px" : `${content.current.scrollHeight}px`);
 
-        setRotateState(
-            setActive === "active" ? "collapse-icon" : "collapse-icon rotation"
-        );
+        setRotateState(setActive === "active" ? "collapse-icon" : "collapse-icon rotation");
     }
     return (
         <div className={"collapse-section"} id={props.id}>

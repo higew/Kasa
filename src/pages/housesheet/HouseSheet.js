@@ -3,6 +3,7 @@ import Collapse from '../../components/collapse/Collapse'
 import Stars from '../../components/stars/Stars'
 import Tags from '../../components/tags/Tags'
 import Gallery from '../../components/gallery/Gallery'
+import data from '../../assets/data/data.json'
 import { useNavigate, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "./houseSheet.css";
@@ -13,27 +14,9 @@ const Housing = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        const getData = () => {
-        fetch("../../data.json", {
-            headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json",
-            },
-        })
-            .then(function (response) {
-            return response.json();
-            })
-            .then(function (myJson) {
-            let myAppartment = myJson.find((app) => app.id === id);
-            if (myAppartment) {
-                setAppartment(myAppartment);
-            } else {
-                navigate("/*");
-            }
-            });
-        };
-        getData();
-    }, [appartment, id, navigate]);
+        let myAppartment = data.find((app) => app.id === id);
+        myAppartment ? setAppartment(myAppartment) : navigate("/*")
+    });
 
     return appartment ? (
         <section id={"appartment-description"}>

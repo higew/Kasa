@@ -16,7 +16,6 @@ function App() {
         <Route path="/housesheet/:id" element={<HouseSheet />} />
         <Route path="/about" element={<About />} />
         <Route path="/*" element={<Error />} />
-        <Route path="/housesheet/*" element={<Error />} />
       </Routes>
       <Footer />
     </Router>
