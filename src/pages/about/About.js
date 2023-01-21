@@ -6,7 +6,7 @@ import "./about.css"
 
 const About = () => {
     return (
-        <div>
+        <div className='content-about'>
             <Banner src={imageBackgroundAbout} text={""} />
             <section id={"collapses-group"}>
                 <Collapse title={"Fiabilité"}>

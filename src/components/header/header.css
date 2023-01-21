@@ -21,7 +21,7 @@ header nav #menu li a{
     font-size: 24px;
 }
 
-header nav #menu li a .active {
+header nav #menu li .active {
     border-bottom: 2px #ff6060 solid;
 }
 
